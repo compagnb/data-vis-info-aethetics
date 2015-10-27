@@ -1,0 +1,95 @@
+ body {
+  padding: 0; 
+  margin: 0; 
+  background-color : #bfdeeb;
+} 
+
+canvas {
+  vertical-align: top;
+} 
+
+#button0, #button1, #button2, #button3, #button4, #button5, #button6, #button7, #button8, #button9, #button10, #button11, #button12, #button13, #button14, #button15, #button16{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+#button0:hover + .targetTxt0{
+  visibility: visible;
+}
+
+#button1:hover + .targetTxt1 {
+  visibility: visible;
+}
+#button2:hover + .targetTxt2 {
+  visibility: visible;
+}
+#button3:hover + .targetTxt3 {
+  visibility: visible;
+}
+#button4:hover + .targetTxt4 {
+  visibility: visible;
+}
+#button5:hover + .targetTxt5 {
+  visibility: visible;
+}
+#button6:hover + .targetTxt6 {
+  display : block;
+}
+#button7:hover + .targetTxt7 {
+  visibility: visible;
+}
+#button8:hover + .targetTxt8 {
+  visibility: visible;
+}
+#button9:hover + .targetTxt9 {
+  visibility: visible;
+}
+#button10:hover + .targetTxt10 {
+  visibility: visible;
+}
+#button11:hover + .targetTxt11 {
+  visibility: visible;
+}
+#button12:hover + .targetTxt12 {
+  visibility: visible;
+}
+#button13:hover + .targetTxt13 {
+  visibility: visible;
+}
+#button14:hover + .targetTxt14 {
+  visibility: visible;
+}
+#button15:hover + .targetTxt15 {
+  visibility: visible;
+}
+#button16:hover + .targetTxt16 {
+  visibility: visible;
+}
+
+#button0:visited + .circleTxt0{
+  visibility: visible;
+}
+
+.targetTxt0, .targetTxt1, .targetTxt2, .targetTxt3, .targetTxt4, .targetTxt5, .targetTxt6, .targetTxt7, .targetTxt8, .targetTxt9, .targetTxt10, .targetTxt11, .targetTxt12, .targetTxt13, .targetTxt14, .targetTxt15, .targetTxt16{
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 13pt;
+  width: 50%;
+  visibility: hidden;
+  
+}
+
+.circleTxt0, .circleTxt1, .circleTxt2, .circleTxt3, .circleTxt4, .circleTxt5, .circleTxt6, .circleTxt7, .circleTxt8, .circleTxt9, .circleTxt10, .circleTxt11, .circleTxt12, .circleTxt13, .circleTxt14, .circleTxt15, .circleTxt16{
+  font-family: 'Roboto';
+  font-weight: 600;
+  line-height: 32px;
+  font-size: 32px;
+  text-transform: uppercase;
+  visibility: hidden;
+}
+
+/*#parent0, #parent1, #parent2, #parent3, #parent4, #parent5, #parent6, #parent7, #parent8, #parent9, #parent10, #parent11, #parent12, #parent13, #parent14, #parent15, #parent16{*/
+/*   visibility: hidden;*/
+/*}*/
+
