@@ -14,61 +14,58 @@ canvas {
   height: 100px;
 }
 
-#button0:hover + .targetTxt0{
+#button0:hover ~ .targetTxt0, #parent0{
   visibility: visible;
 }
 
-#button1:hover + .targetTxt1 {
+#button1:hover ~ .targetTxt1, #parent1 {
   visibility: visible;
 }
-#button2:hover + .targetTxt2 {
+#button2:hover ~ .targetTxt2, #parent2 {
   visibility: visible;
 }
-#button3:hover + .targetTxt3 {
+#button3:hover ~ .targetTxt3, #parent3 {
   visibility: visible;
 }
-#button4:hover + .targetTxt4 {
+#button4:hover ~ .targetTxt4, #parent4 {
   visibility: visible;
 }
-#button5:hover + .targetTxt5 {
+#button5:hover ~ .targetTxt5, #parent5 {
   visibility: visible;
 }
-#button6:hover + .targetTxt6 {
+#button6:hover ~ .targetTxt6, #parent6 {
   display : block;
 }
-#button7:hover + .targetTxt7 {
+#button7:hover ~ .targetTxt7, #parent7 {
   visibility: visible;
 }
-#button8:hover + .targetTxt8 {
+#button8:hover ~ .targetTxt8, #parent8 {
   visibility: visible;
 }
-#button9:hover + .targetTxt9 {
+#button9:hover ~ .targetTxt9, #parent9 {
   visibility: visible;
 }
-#button10:hover + .targetTxt10 {
-  visibility: visible;
-}
-#button11:hover + .targetTxt11 {
-  visibility: visible;
-}
-#button12:hover + .targetTxt12 {
-  visibility: visible;
-}
-#button13:hover + .targetTxt13 {
-  visibility: visible;
-}
-#button14:hover + .targetTxt14 {
-  visibility: visible;
-}
-#button15:hover + .targetTxt15 {
-  visibility: visible;
-}
-#button16:hover + .targetTxt16 {
+#button0:hover ~ .targetTxt10, #parent10{
   visibility: visible;
 }
 
-#button0:visited + .circleTxt0{
+#button1:hover ~ .targetTxt11, #parent11 {
   visibility: visible;
+}
+#button2:hover ~ .targetTxt12, #parent12 {
+  visibility: visible;
+}
+#button3:hover ~ .targetTxt13, #parent13 {
+  visibility: visible;
+}
+#button4:hover ~ .targetTxt14, #parent14 {
+  visibility: visible;
+}
+#button5:hover ~ .targetTxt15, #parent15 {
+  visibility: visible;
+}
+#button6:hover ~ .targetTxt16, #parent16 {
+  display : block;
 }
 
 .targetTxt0, .targetTxt1, .targetTxt2, .targetTxt3, .targetTxt4, .targetTxt5, .targetTxt6, .targetTxt7, .targetTxt8, .targetTxt9, .targetTxt10, .targetTxt11, .targetTxt12, .targetTxt13, .targetTxt14, .targetTxt15, .targetTxt16{
@@ -86,10 +83,10 @@ canvas {
   line-height: 32px;
   font-size: 32px;
   text-transform: uppercase;
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 
-/*#parent0, #parent1, #parent2, #parent3, #parent4, #parent5, #parent6, #parent7, #parent8, #parent9, #parent10, #parent11, #parent12, #parent13, #parent14, #parent15, #parent16{*/
-/*   visibility: hidden;*/
-/*}*/
+#parent0, #parent1, #parent2, #parent3, #parent4, #parent5, #parent6, #parent7, #parent8, #parent9, #parent10, #parent11, #parent12, #parent13, #parent14, #parent15, #parent16{
+   visibility: hidden;
+}
 
