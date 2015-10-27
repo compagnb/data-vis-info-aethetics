@@ -48,14 +48,14 @@ function draw() {
   
   for (var h = 0; h < buttonArray.length; h++){
     buttonArray[h].display();
-    
-    targetArray[h].display();
-
+    buttonArray[h].update();
+    // targetArray[h].display();
   }
   for (var i = 0; i < circleTxtArray.length; i++){
-    circleTxtArray[i].display();
+    // circleTxtArray[i].display();
   }
-  noLoop();
+  
+  // noLoop();
 }
 
 // process data function
@@ -140,7 +140,23 @@ Button.prototype.display = function(){
   // div.style('background-color', '#' + hexColor[this.addClass]);
   div.style('background-image', 'url(images/' + this.imgNum + '.png)');
 }
-
+Button.prototype.update = function(){
+  if(dist(this.posX+50, this.posY+50,mouseX, mouseY) <= 50){
+    targetArray[this.addClass].display();
+    circleTxtArray[this.addClass].display();
+  }else{
+    var allCTxt = selectAll(".circleTxt" + this.addClass);
+    var allTTxt = selectAll(".targetTxt" + this.addClass);
+      // console.log(addClass);
+      for (var k = 0; k < allCTxt.length; k++){
+        allCTxt[k].style('visibility', 'hidden');
+      }
+      for (var j = 0; j < allTTxt.length; j++){
+        allCTxt[j].style('visibility', 'hidden');
+      }
+        
+  }
+}
 
 // class circle text
 function CircleTxt(string, posX, posY, radius, hexCol, addClass) {
@@ -171,8 +187,10 @@ CircleTxt.prototype.display = function() {
     var div = createDiv(currentChar);
     
     // define type face and size before calculating width
-    // div.style('font-size', '32pt');
-    // div.style('font-family', 'Roboto');
+    div.style('font-size', this.string.length);
+    div.style('font-family', 'Roboto');
+    div.style('font-weight', '600');
+    div.style('text-transform', 'uppercase');
     div.style('color', '#' + this.hexCol);
     
     // dummy position to estimate width
@@ -180,7 +198,7 @@ CircleTxt.prototype.display = function() {
     var w = div.elt.offsetWidth;
 
     // Each box is centered so we move half the width
-    arclength += this.radius/2;
+    arclength += this.radius/(this.string.length*.33);
     // arclength += w
 
     // Get the angle
@@ -192,7 +210,7 @@ CircleTxt.prototype.display = function() {
     // console.log(this.hexColor);
     // div.style('opacity','0.6');
 
-    // div.elt.style.height = '32px';
+    div.elt.style.height = this.string.length +"px";
     
 
     // CSS transform, convert angle to degrees
@@ -209,10 +227,11 @@ CircleTxt.prototype.display = function() {
 function Blurb(target, addClass){
   this.target = target;
   this.addClass = addClass;
+  var div;
 }
 
 Blurb.prototype.display = function(){
-  var div = createDiv(this.target);
+  div = createDiv(this.target);
   div.class('targetTxt' + this.addClass);
   div.class(this.addClass);
   div.position(windowWidth*.45, 500);
