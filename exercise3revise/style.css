@@ -45,27 +45,27 @@ canvas {
 #button9:hover ~ .targetTxt9, #parent9 {
   visibility: visible;
 }
-#button0:hover ~ .targetTxt10, #parent10{
+#button10:hover ~ .targetTxt10, #parent10{
   visibility: visible;
 }
 
-#button1:hover ~ .targetTxt11, #parent11 {
+#button11:hover ~ .targetTxt11, #parent11 {
   visibility: visible;
 }
-#button2:hover ~ .targetTxt12, #parent12 {
+#button12:hover ~ .targetTxt12, #parent12 {
   visibility: visible;
 }
-#button3:hover ~ .targetTxt13, #parent13 {
+#button13:hover ~ .targetTxt13, #parent13 {
   visibility: visible;
 }
-#button4:hover ~ .targetTxt14, #parent14 {
+#button14:hover ~ .targetTxt14, #parent14 {
   visibility: visible;
 }
-#button5:hover ~ .targetTxt15, #parent15 {
+#button15:hover ~ .targetTxt15, #parent15 {
   visibility: visible;
 }
-#button6:hover ~ .targetTxt16, #parent16 {
-  display : block;
+#button16:hover ~ .targetTxt16, #parent16 {
+  visibility: visible;
 }
 
 .targetTxt0, .targetTxt1, .targetTxt2, .targetTxt3, .targetTxt4, .targetTxt5, .targetTxt6, .targetTxt7, .targetTxt8, .targetTxt9, .targetTxt10, .targetTxt11, .targetTxt12, .targetTxt13, .targetTxt14, .targetTxt15, .targetTxt16{
@@ -74,7 +74,6 @@ canvas {
   font-size: 13pt;
   width: 50%;
   visibility: hidden;
-  
 }
 
 .circleTxt0, .circleTxt1, .circleTxt2, .circleTxt3, .circleTxt4, .circleTxt5, .circleTxt6, .circleTxt7, .circleTxt8, .circleTxt9, .circleTxt10, .circleTxt11, .circleTxt12, .circleTxt13, .circleTxt14, .circleTxt15, .circleTxt16{
